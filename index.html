@@ -1,91 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        body {
-            font-family: arial;
-        }
-
-        header {
-            background-color: red;
-            color: white;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        main {
-            background-color: yellow;
-        }
-
-        footer {
-            background-color: red;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="">
-            logo
-        </a>
-        <nav>
-            <li><a href="">Sobre mi</a></li>
-            <li><a href="">Portafolio</a></li>
-            <li><a href="">Servicios</a></li>
-            <li><a href="">Contacto</a></li>
-        </nav>
+      <h1>Formularios</h1>
     </header>
     <main>
-        <h1>Titulo principal</h1>
-        <h2>Mis primeros años</h2>
-        <article>
-            <!--Inicio Descripción-->
-            <p>Naci en Lima, Perú pero por los medios que
-             tenía disponibles en ese momento me centre en los libros y documentales.</p>
-             <p>Desde pequeño tenia mucha curiosidad por la tecnología.</p>
-             <!--Fin Descripción-->
-        </article>
-        <section>
-            <h2>Sobre mi</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, est voluptatem? Porro assumenda praesentium
-                voluptate, ipsam provident eum libero esse recusandae molestias dolor saepe sunt veritatis at aliquam numquam qui!
-            </p>
-        </section>
-        <section>
-            <h2>Portafolio</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellat architecto possimus eos porro, illum quos
-                pariatur, nisi labore non nobis temporibus minus id expedita qui doloribus minima? Voluptates, accusamus!
-            </p>
-        </section>
-        <section>
-            <h2>Servicios</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat nesciunt eos ut ducimus fugiat dolore quasi
-                sit et? Voluptas laboriosam praesentium perferendis beatae consequuntur placeat similique voluptatibus provident
-                nesciunt.
-            </p>
-        </section>
-        <section>
-            <form action="">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="text" placeholder="Correo">
-                <input type="text" placeholder="Telefono">
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpiar</button>
-            </form>
-        </section>
+      <hr />
+      <f>
+        <label for="nombres">Nombres y Apellidos</label>
+        <input type="text" id="nombres" placeholder="Ej. Juan Perez" />
+        <br />
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" />
+        <br />
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" />
+        <br />
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" />
+        <br />
+        <label>Estado Civil</label>
+        <br />
+        <input type="radio" id="casado" name="estadocivil" value="casado" />
+        <label for="casado">Casado/a</label>
+        <br />
+        <input type="radio" id="conviviente" name="estadocivil" value="conviviente" />
+        <label for="conviviente">Conviviente</label>
+        <br />
+        <input type="radio" id="Soltero" name="estadocivil" value="soltero" />
+        <label for="soltero">Soltero/a</label>
+        <br>
+        <label>Ciudad</label>
+        <select>
+            <option selected disabled>Seleccione una opción</option>
+            <option value="LIM">Lima</option>
+            <option value="ARE">Arequipa</option>
+            <option value="TRU">Trujillo</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
     </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
-        <p>Creado por CodigO</p>
-        <p>Información</p>
-    </footer>
-</body>
+  </body>
 </html>
